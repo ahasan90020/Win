@@ -26,6 +26,18 @@
         <local:ControlExample x:Name="Example4" HeaderText="Line">
             <Canvas Height="200" Width="100">
                 <Line Stroke="SteelBlue" X1="{x:Bind lineSlider1.Value, Mode=TwoWay}" Y1="{x:Bind lineSlider2.Value, Mode=TwoWay}" X2="{x:Bind lineSlider3.Value, Mode=TwoWay}" Y2="{x:Bind lineSlider4.Value, Mode=TwoWay}" StrokeThickness="{x:Bind lineSlider5.Value, Mode=TwoWay}" Canvas.Top="50"/>
+                <local:WrapPanel Width="400" Height="400" Background="LightBlue" >
+                    <Button Content="A" Padding="4" Width="120" Height="100" />
+                    <Button Content="B" Padding="4" Width="120" Height="100" />
+                    <Button Content="C" Padding="4" Width="120" Height="100" />
+                    <Button Content="D" Padding="4" Width="120" Height="100" />
+                    <Button Content="E" Padding="4" Width="120" Height="100" />
+                    <Button Content="F" Padding="4" Width="120" Height="100" />
+                    <Button Content="G" Padding="4" Width="120" Height="100" />
+                    <Button Content="H" Padding="4" Width="120" Height="100" />
+                    <Button Content="I" Padding="4" Width="120" Height="100" />
+                    <Button Content="J" Padding="4" Width="120" Height="100" />
+                </local:WrapPanel>
             </Canvas>
             
 

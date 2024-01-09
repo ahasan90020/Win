@@ -107,7 +107,7 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(IsInWinUIRepo)' != 'true'">
-        <PackageReference Update="Microsoft.WindowsAppSDK" Version="$(WindowsAppSdkPackageVersion)" />
+        <PackageReference Update="Microsoft.WindowsAppSDK" Version="999.0.0-mock-3.0.0-dev-x64-Debug" />
         <PackageReference Remove="ColorCode.Core" />
         <PackageReference Include="ColorCode.WinUI" Version="$(ColorCodeVersion)" />
         <PackageReference Update="CommunityToolkit.WinUI.Controls.Segmented" Version="$(CommunityToolkitWinUIVersion)" />
@@ -178,6 +178,9 @@
         <Content Include="ControlPagesSampleCode\Typography\TypographySample_xaml.txt" />
     </ItemGroup>
     <ItemGroup>
+        <Page Update="Controls\ControlExample.xaml">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Page>
         <Page Update="Controls\CopyButton\CopyButton.xaml">
             <Generator>MSBuild:Compile</Generator>
         </Page>
